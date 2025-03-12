@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 25px;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px;
+    
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.middle-container img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+.left-text {
+    background-color: #000000; 
+    color: white; 
+    padding: 12px 16px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.right-text {
+    background-color: #ffffff; 
+    padding: 12px 16px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.left-container, .right-container {
+    width: 45%; 
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.right-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.middle-container {
+    padding: 50px;   
+}
+
+.middle-container .text {
+    border: 2px solid black;
+    background-color: #ffffff; 
+    padding: 12px 16px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.stars {
+    font-size: 30px;
+    color: gold;
+    letter-spacing: 5px; /* Adds space between stars */
+}
+
+.bottom-container {
+    border: 2px solid black;
+    background-color: #ffffff; 
+    padding: 50px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Adds spacing between images */
+    padding: 50px;
+}
+
+.carousel img {
+    width: 100px;
+    height: auto;
+    opacity: 0.5; /* Makes side images less visible */
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel img.active {
+    width: 150px; /* Enlarges the center image */
+    opacity: 1; /* Fully visible */
+    transform: scale(1.2); /* Slight zoom effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds depth */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
